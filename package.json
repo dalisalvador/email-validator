@@ -1,0 +1,22 @@
+{
+  "name": "email-validator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalisalvador/email-validator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dalisalvador/email-validator/issues"
+  },
+  "homepage": "https://github.com/dalisalvador/email-validator#readme",
+  "dependencies": {
+    "deep-email-validator": "^0.1.21"
+  }
+}
