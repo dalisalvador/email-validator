@@ -31,7 +31,7 @@ export const ErrorCodes = {
   }
 
 export const checkSMTP = async (sender, recipient, exchange) => {
-    const timeout = 1000 * 8 // 10 seconds
+    const timeout = 1000 * 5 // 10 seconds
     return new Promise(r => {
       let receivedData = false
       console.log({sender, recipient, exchange})
@@ -84,6 +84,7 @@ export const checkSMTP = async (sender, recipient, exchange) => {
       })
   
       socket.on('connect', () => {
+        console.log('Connected!')
         socket.on('data', msg => {
           receivedData = true
           console.log('data', msg)
