@@ -1,3 +1,5 @@
+import validate from 'deep-email-validator'
+
 module.exports = async (req, res) => { 
-    res.send('Testings')
+    res.json(await validate('fsebaste@gmail.com'))
   }
